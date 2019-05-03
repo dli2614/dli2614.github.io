@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: 'Merriweather', serif;
+    font-family: Plain;
 }
 
 header {
@@ -10,20 +10,47 @@ header {
             rgba(0, 0, 0, 0.0),
             rgba(0, 0, 0, 0.0)
         ),
-        url(https://images.unsplash.com/photo-1518552620125-dfc3c2a8e974?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+        url('typewriter.jpg');
     background-size: cover;
     height: 100vh;
 }
 
-.title {
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    color: white;
-    font-size: 30px;
+#about, #projects, #contact {
+    display: inline-block;
+    border-bottom: 4px solid;
+    margin: 100px 0px 50px 0px;
 }
 
+.title {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    font-size: 40px;
+    text-align: right;
+}
+
+.links {
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:visited {
+    color: black;
+}
+
+#name {
+    border-bottom: 8px solid;
+}
 
 .main {
-    margin: 150px;
+    margin: 0px 150px 0px 150px;
+    font-size: 25px;
+}
+
+.main img {
+    float: left;
+    margin: 25px 50px 10px 0px;
 }
