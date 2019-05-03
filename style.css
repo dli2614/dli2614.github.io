@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Plain;
+    font-family: 'Mukta', sans-serif;
 }
 
 header {
@@ -15,17 +15,25 @@ header {
     height: 100vh;
 }
 
+
 #about, #projects, #contact {
     display: inline-block;
     border-bottom: 4px solid;
-    margin: 100px 0px 50px 0px;
+}
+
+#about {
+    margin-top: 100px;
+}
+
+#projects, #contact {
+    margin-bottom: 50px;
 }
 
 .title {
     position: absolute;
     top: 20%;
     left: 60%;
-    font-size: 40px;
+    font-size: 30px;
     text-align: right;
 }
 
@@ -35,6 +43,7 @@ header {
 
 .links a {
     text-decoration: none;
+    color: black;
 }
 
 .links a:visited {
@@ -45,12 +54,80 @@ header {
     border-bottom: 8px solid;
 }
 
+.icons > a {
+    padding-left: 20px;
+}
 .main {
     margin: 0px 150px 0px 150px;
-    font-size: 25px;
+    font-size: 24px;
 }
 
-.main img {
+.me_photo {
     float: left;
-    margin: 25px 50px 10px 0px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gallery img {
+    width: 450px;
+    height: 450px;
+}
+
+.desc {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 3px;
+  border: 0px;
+  border-bottom: solid black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  background-color: rgb(240, 240, 240);
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.contact-form {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.email-form {
+    grid-column: 1 / -1;
+}
+
+.message-form {
+    grid-column: 1 / -1;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+textarea, input {
+    font-family: inherit;
+    font-size: inherit;
+ }

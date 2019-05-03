@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
     </head>
 <body>
     <header>
@@ -13,13 +14,17 @@
                 <li><a href='#contact'>Contact</a></li>
                 <li><a target='_blank' href='https://docs.google.com/document/d/1zQsad8nAfnhSZ9hWJX0ldYRhblP0UUDBP8OkuHhxc5A/edit?usp=sharing'>Resume</a></li>
             </ul>
+            <div class='icons'>
+                <a target='blank_' href='https://www.linkedin.com/in/dli2614/'><img src='linkedin.svg' height='20px'></a>
+                <a target='blank_' href='https://github.com/dli2614/'><img src='github.svg' height='20px'></a>
+            </div>
         </div>
     </header>
     <div class="main">
         <div>
             <h2 id="about">About</h2>
             <br style='clear: both;'>
-            <img src='IMG_0282.JPG' width='350px'>
+            <img class='me_photo' src='IMG_0282.JPG' width='350px'>
             <p>My name is Daniel Li. I am currently a senior at Stony Brook University, studying Computer Science and Statistics.
                 I love learning and reading about new technologies and how integrate with everyday life. 
                 I believe that computer science is the closes thing to magic humand kind has ever seen. 
@@ -28,15 +33,63 @@
                 I also spend a lot of time front of my computer turning coffee into code. You can see some of works in the 
                 Projects section below. It also includes some no technical stuff I've worked on too. 
                 If anything catches your eye or interests you, please feel free to give me an email or reach out to me on social media.
+                If you want to learn more about my technical skills, take a look at my
+                <a target='_blank' href='https://docs.google.com/document/d/1zQsad8nAfnhSZ9hWJX0ldYRhblP0UUDBP8OkuHhxc5A/edit?usp=sharing'>resume.</a>
             </p>
             
             <br style='clear: both;'>
             <h2 id="projects">Projects</h2>
-            <br style='clear: both;'>
-            
-            <h2 id="contact">Contact</h2>
-            <br style='clear: both;'>
 
+
+            <div class='gallery'>
+                <div>
+                    <a target='blank_' href='https://drive.google.com/file/d/182VKvPQamBPI_Ww6Hx0VxQvK3UJFxhqp/view?usp=sharing'><img src='statesman.jpg'></a>
+                    <p class='desc'>SB Statesman - It Exists!</p>
+                </div>
+                <div>
+                    <a target='blank_' href='https://drive.google.com/file/d/1YeQaX2rVNB7-9jQdB3BuOpVoJpzG63Y6/view?usp=sharing'><img src='kung_fu_tea.jpg'></a>
+                    <p class='desc'>Kung Fu Tea Makes Its Way to Stony Brook</p>
+                </div>
+                <div>
+                    <a target='blank_' href='https://docs.google.com/document/d/1jNbRcEyNFqeFP-Ia6vNAAm5UYflQAe2W25uy6UTMuRA/edit?usp=sharing'><img src='dip_pen.jpg'></a>
+                    <p class='desc'>Writing with a Dip Pen and Ink </p>
+
+                </div>
+                <div>
+                    <a target='blank_' href=''><img src='so_logo.jpg'></a>
+                    <p class='desc'>Stack Overflow Clone</p>
+                </div>
+                <div>
+                    <a target='blank_' href=''><img src='Screen Shot 2019-05-03 at 12.02.39 PM.png'></a>
+                    <p class='desc'>Super Canvasser</p>
+                </div>
+                <div>
+                    <a target='blank_' href=''><img src='SBU-Revised-Interior-Header_2.7PM.jpeg'></a>
+                    <p class='desc'>Course Site Generator</p>
+                </div>
+            </div>
+
+            <br style='clear: both;'>
+            <h2 id="contact">Contact</h2>
+            <form class='contact-form' action="/action_page.php">
+                <div class='fname-form'>
+                    <label for="fname">First Name</label>
+                    <input type="text">
+                </div>
+                <div class='lname-form'>
+                    <label for="lname">Last Name</label>
+                    <input type="text">
+                </div>
+                <div class='email-form'>
+                    <label for="lname">Email</label>
+                    <input type="email">
+                </div>
+                <div class='message-form'>
+                    <label for="subject">Message</label>
+                    <textarea id="subject" style="height:200px"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </div>  
 </body>
